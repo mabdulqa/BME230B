@@ -1,0 +1,39 @@
+network best2 { }
+
+variable "X" { //2values 
+	 type discrete[2] {  "false"  "true" };
+}
+variable "Y" { //2values 
+	 type discrete[2] {  "false"  "true" };
+}
+variable "hapR" { //2values 
+	 type discrete[2] {  "false"  "true" };
+}
+variable "vpsR" { //2values 
+	 type discrete[2] {  "false"  "true" };
+}
+variable "vpsT" { //2values 
+	 type discrete[2] {  "false"  "true" };
+}
+
+
+probability ( "hapR" ) { //1 variable(s) and 2 values 
+	table 0.5 0.5 ;
+	property AncestralNode; 
+} 
+probability ( "X" ) { //1 variable(s) and 2 values 
+	table 0.5 0.5 ;
+	property AncestralNode; 
+} 
+probability ( "vpsT" ) { //1 variable(s) and 2 values 
+	table 0.5 0.5 ;
+	property AncestralNode; 
+} 
+probability ("vpsR" ) { //1 variable(s) and 2 values 
+	table 0.5 0.5 ;
+	property AncestralNode; 
+}
+probability ("Y" )  { //1 variable(s) and 2 values 
+	table 0.5 0.5 ;
+	property AncestralNode; 
+}
